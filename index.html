@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+   
+<style>
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top Header */
+.top-header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.top-header span {
+    margin: 0 15px;
+}
+
+/* Main Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    background-color: #f8bbd0;
+top-margine: 0;
+bottom-margin: 0;
+}
+
+.logo img {
+    width: 60px; /* Replace with actual logo size */
+}
+
+.delivery-message {
+    text-align: center;
+}
+
+.delivery-message h1 {
+    color: #e91e63;
+    font-size: 20px;
+ font-weight: bold;
+}
+
+.delivery-message p {
+    color: #757575;
+    font-size: 14px;
+ font-weight: bold;
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    width: 200px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #f8bbd0;
+    padding: 10px;
+    margin-top: 5px;
+ font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.navbar ul li a:hover {
+    background-color: #d32f2f;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.about-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.text-section {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.text-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+}
+
+.text-section p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.image-section {
+    width: 50%;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.footer-part {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-part h4 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #ffcc00; /* Optional: to make the section titles stand out */
+}
+
+
+.footer-part p, .footer-part ul {
+  margin: 5px 0;
+}
+
+.footer-part ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-part ul li {
+  margin: 5px 0;
+}
+
+.footer-part ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-part ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-part {
+    margin: 20px 0;
+  }
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+    <!-- Top Header Section -->
+    <div class="top-header">
+        <span>Same-Day Design and Hand-Delivery!*</span>
+        <span>77 University Crescent, Winnipeg, MB R3T 3N8 &nbsp; | &nbsp; (573) 372-0726</span>
+    </div>
+
+    <!-- Main Header with Logo, Free Delivery Message, and Search Bar -->
+    <div class="main-header">
+        <div class="logo">
+            <img src="R.png" alt="Danaliza Florist Logo" >
+        </div>
+        <div class="delivery-message">
+            <h1>FREE DELIVERY</h1>
+            <p>for local online orders*</p>
+        </div>
+        <div class="delivery-message">
+            <h1>DELIVER HAPPINESS</h1>
+         <p>for EVERY online orders*</p>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" target="_Blank">Deal of the Day</a></li>
+            <li><a href="#" target="_Blank">Occasions</a></li>
+            <li><a href="#" target="_Blank">Birthday</a></li>
+            <li><a href="#" target="_Blank">Sympathy and Funeral</a></li>
+            <li><a href="#" target="_Blank">Flowers, Plants & Gifts</a></li>
+            <li><a href="#" target="_Blank">Our Shop</a></li>
+        </ul>
+    </nav>
+
+
+<div class="about-us-container">
+        <div class="text-section">
+            <h1>About Us</h1>
+            <p>Welcome to [ZXY Company ]. Our mission is to provide exceptional services and solutions that meet the highest standards of quality and professionalism. We are dedicated to building long-lasting relationships with our clients by delivering outstanding results in every project we undertake.</p>
+            <p>With years of experience in the industry, our team is composed of skilled professionals who are passionate about their work and committed to excellence. We believe in innovation, integrity, and collaboration, which are the cornerstones of our company culture.</p>
+            <p>We invite you to learn more about our services and how we can help you achieve your goals. Thank you for choosing [ZXY Company ]. We look forward to working with you.</p>
+        </div>
+        <div class="image-section">
+            <img src="R.png" alt="About Us Image">
+        </div>
+    </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <!-- First Section -->
+      <div class="footer-top">
+        <!-- Part 1: Logo and Message -->
+        <div class="footer-part">
+          <h4><img src="R.png" alt="Astro Medical Logo" class="logo"></h4>
+          <p>Walk-ins are always welcome. We are here to help you any time you need.</p>
+          
+        </div>
+
+        <!-- Part 2: Pages -->
+        <div class="footer-part">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="#">Deal of the Day</a></li>
+            <li><a href="#">Occasions</a></li>
+            <li><a href="#">Birthday</a></li>
+            <li><a href="#">Sympathy and Funeral</a></li>
+            <li><a href="#">Flowers,Plants & Gifts</a></li>
+            <li><a href="#">Our Shop</a></li>
+          </ul>
+        </div>
+
+        <!-- Part 3: Contact Information -->
+        <div class="footer-part">
+          <h4>Contact Information</h4>
+          <p>Address: 77 University Crescent, Winnipeg, Manitoba</p>
+          <p>Phone: (204) 399-1110</p>
+          <p>Email: <a href="mailto:Hussein_dehghani@yahoo.com">Hussein_dehghani@yahoo.com</a></p>
+          <p>Social Media:</p>
+          <a href="#"><img src="facebook-icon.png" alt="Facebook Icon" class="social-icon"></a>
+          <a href="#"><img src="instagram-icon.png" alt="Instagram Icon" class="social-icon"></a>
+        </div>
+      </div>
+
+      <!-- Second Section -->
+      <div class="footer-bottom">
+        <p>Copyright Astro Medical 2023 ©. Web Design By <a href="https://lumamarketing.com">Luma Marketing Agency</a></p>
+      </div>
+    </div>
+  </footer>
+
+
+    <script >
+// Example of JavaScript to handle a click on navigation links
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        alert("Navigation link clicked: " + this.textContent);
+    });
+});
+
+
+</script>
+</body>
+</html>
